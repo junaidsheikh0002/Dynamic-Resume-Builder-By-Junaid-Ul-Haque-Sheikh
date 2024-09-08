@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Dynamic Resume Builder By Junaid Ul Haque Sheikh</h1>
+
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+        </fieldset>
+
+        <button type="button" onclick="generateResume()">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+        <h2>Your Resume</h2>
+        <div class="output-field">
+            <strong>Name:</strong> <span id="outputName"></span>
+        </div>
+        <div class="output-field">
+            <strong>Email:</strong> <span id="outputEmail"></span>
+        </div>
+        <div class="output-field">
+            <strong>Phone:</strong> <span id="outputPhone"></span>
+        </div>
+        <div class="output-field">
+            <strong>Education:</strong> <span id="outputEducation"></span>
+        </div>
+        <div class="output-field">
+            <strong>Experience:</strong> <span id="outputExperience"></span>
+        </div>
+        <div class="output-field">
+            <strong>Skills:</strong> <span id="outputSkills"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
